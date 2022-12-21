@@ -13,7 +13,8 @@
         <h1>These are the notes:</h1>
         <ul>
             {% for note in notes %}
-                <li>{{note.title}}</li>
+                <!-- <a href={{note.pk}}><li>{{note.title}}</li></a> -->
+                <a href="{{request.get_full_path}}/{{note.pk}}"><li>{{note.title}}</li></a>
             {% endfor %}
         </ul>
     </div>
