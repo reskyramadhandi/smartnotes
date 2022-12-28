@@ -29,6 +29,10 @@ class LoginInterfaceView(LoginView):
     template_name = 'home/login.html'
 
 
+class NiceLoginInterfaceView(LoginView):
+    template_name = 'home/nice_login.html'
+
+
 class HomeView(TemplateView):
     template_name = 'home/welcome.html'
     extra_context = {'today': datetime.today()}
