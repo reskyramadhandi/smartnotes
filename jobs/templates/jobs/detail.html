@@ -1,0 +1,21 @@
+{% extends "nice_base.html" %}
+
+{% block content %}
+
+<main>
+
+    <section class="py-1 text-center container">
+        <div class="row py-lg-1">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Job Detail</h1>
+                <img class="card-img-top" src="{{ job.image.url }}" alt="">
+                <p class="lead text-muted">{{ job.summary }}</p>
+                <p>
+                    <a href="{% url 'jobs' %}" class="btn btn-secondary my-2">Back</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}
