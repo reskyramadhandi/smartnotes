@@ -8,18 +8,7 @@
 <form action="{% url 'order' %}" method="post">
     {% csrf_token %}
 
-    <label for="topping1">Toping 1: </label>
-    <input type="text" name="topping1" id="topping1">
-
-    <label for="topping2">Toping 2: </label>
-    <input type="text" name="topping2" id="topping2">
-
-    <label for="size">Size: </label>
-    <select name="size" id="size">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-    </select>
+    {{ pizzaform }}
 
     <input type="submit" value="Order Pizza">
 </form>
