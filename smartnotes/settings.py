@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'notes',
     'jobs',
+    'forms',
 ]
 
 MIDDLEWARE = [
