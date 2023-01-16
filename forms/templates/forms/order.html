@@ -5,6 +5,8 @@
 <h1>Nandia's Garden</h1>
 <h2>Order a Pizza</h2>
 
+<h3>{{ note }}</h3>
+
 <form action="{% url 'order' %}" method="post">
     {% csrf_token %}
 
